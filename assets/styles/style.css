@@ -1,0 +1,58 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-right:35%;
+}
+.clic{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5vh;
+    position: absolute;
+    margin:5vh 10vh;
+    column-gap: 10px;
+}
+button{
+    width:fit-content;
+    height: fit-content;
+    background-color: #f00;
+    border: 2px solid #f00;
+    border-radius: 10px;
+}
+.ii{
+    width:50px;
+    aspect-ratio: 1/1;
+    
+}
+a{
+    font-size: 1.5vw;
+    color:#fff;
+    text-decoration: none;
+    margin-top: 0px;
+}
+.calc{
+    margin:10vw -2vh;
+    width:26vw;
+    aspect-ratio:  3 / 4;
+    border: 5px solid #ff0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.calc:hover{
+    box-shadow: 0 0 10px #f00;
+    transition: box-shadow 0.2s linear ;
+}
+/* mobile-view */
+@media only screen and (max-width:  768px) {
+    .clic{
+        margin:5vw -7vh;
+    }
+    a{
+        font-size:5vw;
+    }
+    .calc{
+        width:80vw;
+        margin-left:-25vw;
+        margin-top: 20vh;
+    }
+}
